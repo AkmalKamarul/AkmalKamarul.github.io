@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style/contact.css">
+</head>
+<body>
+
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="order.html">Order Now</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+    
+<div class="contact">
+    <h1 style="background-color: #20a6d6;"><i>CONTACT US</i></h1>
+    <p>We welcome you!</p> 
+    <br>
+    <h3 style="font-size:large;">OUR INFORMATION</h3>
+    <p> 012-9248659 . ChicvoryCo@gmail.com </p>
+
+    <h3 style="font-size:large;">OUR SOCIAL MEDIA</h3>
+    <a href="https://www.instagram.com/kmarleyhaha/">        
+        <img  src="../ig.jpeg" alt="ig" style="text-align: center;" width="300" height="500" >
+    </a>
+</div><br>
+<h1 style="text-align: center; background-color: #731cd1;" >SEND US SUGGESTION</h1>
+<form>
+    <table border="1" style="margin-left: auto;margin-right: auto;background-color:#bd0a78; color:#000000;" >
+        <tr>
+            <td>
+                 <label for="Fname">First Name:</label>
+            </td>
+            <td>
+                <input type="text" id="Fname" name="Fname">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Lname">Last Name:</label>
+            </td>
+            <td>
+                <input type="text" id="Lname" name="Lname">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="mail">Email:</label>
+            </td>
+            <td>
+                <input type="text" id="mail" name="mail">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="sugg">Suggestion:</label>
+            </td>
+            <td>
+                <textarea type="text" id="sugg" name="sugg" rows="4" cols="50"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <p><input type="button" name="submit"value="Submit" onclick="pop()">
+                    <input type="reset" name="Cancel" value="Cancel"></p>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+
+    <script>
+         function pop() {
+  alert(" Thank You! Your Suggestion Has Been Sent. We Appreciate It!! ");
+}
+    </script>
+</html>
+
+

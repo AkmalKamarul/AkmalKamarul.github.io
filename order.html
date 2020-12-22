@@ -1,0 +1,305 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style/order.css">
+     </head>
+    
+    <body>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="order.html">Order Now</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <marquee behavior="scroll" direction="left" scrollamount="10" loop="infinite" style="color:#02103d ; background-color:#0fabee ;">INSERT ABC345 ADD COUPON LABEL TO GET 10% OFF!!! INSERT ABC345 AT COUPON LABEL TO GET 10% OFF!!! INSERT ABC345 AT COUPON LABEL TO GET 10% OFF!!!</marquee>
+
+          <h1 style="background-color: rgb(233, 17, 53);color: aliceblue;"> MENU </h1>
+        
+        <!--TABLE MENU -->
+          <div class="row">
+            <div class="menuF">
+                <table border="1" style="background-color:#02103d">
+                <tr>
+                  <th style="font-size: 23px;font-family: Tahoma, sans-serif;text-align: center;">ID</th>
+                  <th style="font-size: 23px;font-family: Tahoma, sans-serif;text-align: center;">FOOD</th>
+                  <th style="font-size: 23px;font-family: Tahoma, sans-serif;text-align: center;">PRICE</th>
+                  
+                </tr>
+                <tr>
+                    <td>001</td>
+                  <td>Chicken Burger</td>
+                  <td>RM 3</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                  <td>Spicy Fried Chicken</td>
+                  <td>RM 4</td>
+                </tr> 
+                <tr>
+                    <td>001</td>
+                  <td>Burrito</td>
+                  <td>RM 5</td>
+                </tr>
+                 <tr>
+                    <td>001</td>
+                  <td>Chicken Chop</td>
+                  <td>RM 6</td>
+                </tr>
+                 <tr>
+                    <td>001</td>
+                  <td> Double Spicy Chicken Burger </td>
+                  <td>RM 6.50</td>
+                </tr>
+              </table>
+            </div>
+            <div class="menuD">
+              <table border="1" style="background-color:#02103d">
+                <tr>
+                    <th style="font-size: 23px;font-family: Tahoma, sans-serif;text-align: center;">ID</th>
+                    <th style="font-size: 23px;font-family: Tahoma, sans-serif;text-align: center;">DRINK</th>
+                    <th style="font-size: 23px;font-family: Tahoma, sans-serif;text-align: center;">PRICE</th>
+                    
+                  </tr>
+                  <tr>
+                    <td>001</td>
+                  <td>Vanilla Ice Blended</td>
+                  <td>RM 3</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                  <td>Oreo Milkshake</td>
+                  <td>RM 3.50</td>
+                </tr> 
+                <tr>
+                    <td>003</td>
+                  <td>Peppermint Mocha Milkshake</td>
+                  <td>RM 3.50</td>
+                </tr>
+                 <tr>
+                    <td>004</td>
+                  <td>Caramel Fudge Milkshake</td>
+                  <td>RM 4</td>
+                </tr>
+                 <tr>
+                    <td>005</td>
+                  <td>Hershey's Chocolate Milkshake</td>
+                  <td>RM 4.50</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          
+
+        <!--FORM TABLE-->
+        <h1 style="background-color: rgb(233, 201, 17);color: rgb(0, 0, 0);">ORDER HERE</h1>
+        <form>
+            <table border="1" margin="auto" style="background-color:#380851">
+                <tr>
+                    <td>
+                         <label for="name"> Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Phone Number:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="phone" name="phone">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="food">Food ID:</label>
+                    </td>
+                    <td>
+                        <select id="food"> 
+                            <option disabled selected value> -- select an option -- </option>
+                            <option value="0"> --No food--</option>
+                            <option value="1">001- Chicken Burger</option>
+                            <option value="2">002- Spicy Fried Chicken</option>
+                            <option value="3">003- Burrito </option>
+                            <option value="4">004- Chicken Chop  </option>
+                            <option value="5">005- Double Chicken Burger</option>
+                        </select><br>
+                        <input type="number"min="0" id="quantityF"name="quantityF" placeholder="Quantity">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="adds">Additional Side: </label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="YaddC" name="YaddC" onclick="addC()"> 
+                        <label for="addC">Yes</label> 
+                        <input type="checkbox" id="NaddC" name="NaddC" onclick="addN()"> 
+                        <label for="addC">No</label> <br>
+
+                        <select id="adds" disabled > 
+                            <option disabled selected value> -- select an option -- </option>
+                            <option value="0"> --No add-on--</option>
+                            <option value="g">Gravy- RM 1.50</option>
+                            <option value="f">Fries- RM 3.00</option>
+                            <option value="c">Cheese-RM 2.00</option>
+                            
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="drinks">Drinks ID:</label>
+                    </td>
+                    <td>
+                                    
+                        <select id="drinks" >
+                            <option disabled selected value> -- select an option -- </option>
+                            <option value="0"> -- No drinks -- </option>
+                            <option value="1">001-Vanilla Ice Blended</option>
+                            <option value="2">002-Oreo Milkshake</option>
+                            <option value="3">003-Peppermint Mocha Milkshake</option>
+                            <option value="4">004-Caramel Fudge Milkshake</option>
+                            <option value="5">005-Hershey's Chocolate Milkshake</option>
+                        </select><br>
+                        <input type="number"min="0" id="quantityD"name="quantityD" placeholder="Quantity">
+
+                    </td>
+                </tr>
+              
+                
+                <tr>
+                    <td>
+                        <label for="address">Address:</label>
+                    </td>
+                    <td>
+                        <textarea id="address" name="address" rows="4" cols="40">
+                            
+                        </textarea>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="coupon">Coupon:</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="y" name="m" value="y" onclick ="Member()">
+                        <label for="y">Yes</label>
+                        <input type="radio" id="n" name="m" value="n" onclick="hideMember()">
+                        <label for="n">No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="couponid">Coupon ID:</label></td>
+                    <td><input type="text" id="couponid" name="couponid" disabled></td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        <p><input type="button" name="payment"value="Payment" onclick="Receipt()">
+                        <input type="reset" name="Cancel" value="Cancel"></p>
+                    </td>
+                </tr>
+            </table> 
+            <table style="background-color: rgb(77, 7, 51)">
+                <h1 style="background-color: rgb(35, 17, 233);color: rgb(0, 0, 0);">RECEIPT</h1>
+                <th>
+                    <p style="color: rgb(255, 253, 253);" id ="display"></p>
+                </th>          
+            </table> 
+            <p style=" text-align: center;" ><button onclick="record()">Confirm Your Order</button>
+ </form>
+    </body>
+    
+    <script>
+        function addC(){
+            document.getElementById('adds').disabled = false;
+        }
+        function NaddC() {
+                document.getElementById('adds').disabled = true;
+                document.getElementById('adds').value = "0";
+            }
+        
+        function Member(){
+            document.getElementById('couponid').disabled = false;
+        }
+        function hideMember() {
+                document.getElementById('couponid').disabled = true;
+                document.getElementById('couponid').value = "";
+            }
+      
+      function Receipt(){
+          var name = document.getElementById("name").value;
+          var f = document.getElementById("food").value;
+          var p = document.getElementById("phone").value;
+          var address = document.getElementById("address").value;
+          var d = document.getElementById("drinks").value;
+          var c = document.getElementById("couponid").value;
+          var add = document.getElementById("adds").value;
+          var qf = parseInt(document.getElementById("quantityF").value);
+          var qd =  parseInt(document.getElementById("quantityD").value);
+
+          //Calc
+
+            if (f == '0')
+                var f = 0;
+            else if (f == '1')
+                var f = 3.00;
+            else if (f == '2')
+                var f = 4.00;
+            else if (f == '3')
+                var f = 5.00; 
+            else if (f == '4')
+                var f = 6.00;
+            else if (f == '5')
+                var f = 6.50;
+            
+            if (d == '0')
+                var d = 0;
+            else if (d == '1')
+                var d = 3.00;
+            else if (d == '2')
+                var d = 3.50;
+            else if (d == '3')
+                var d = 3.50; 
+            else if (d == '4')
+                var d= 4.00;
+            else if (d == '5')
+                var d = 4.50;
+            
+             if (add == '0')
+                var add = 0;
+            else if (add == 'g')
+                var add = 1.50;
+            else if (add == 'f')
+                var add = 3.00;
+            else if (add == 'c')
+                var add = 2.00; 
+
+            
+            var price = (f*qf)+(d*qd)+add;
+            
+            if (c == "")
+            {
+                price = price;
+            }
+            else 
+                price = price- (price*0.1);
+
+        //Display
+        document.getElementById("display").innerHTML= "<br> Name:"+name+"<br> Phone :"+p+"<br> Address:"+address+"<br> Price: RM"+price.toFixed(2);    
+
+      }
+      function record() {
+  alert(" Thank You! Your Order Has Been Process. ");
+}
+    </script>
+</html>
+
+<!--
+        
+       
+-->
